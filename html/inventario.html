@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link id="Link_Estilos_Generales" rel="stylesheet" href="/css/bootstrap-lux.css"/>
+    <link rel="stylesheet" href="/css/EstilosContenedores.css" />
+    <link rel="stylesheet" href="/css/estilos-Adicionales.css" />
+    <link rel="stylesheet" href="/css/acciones-reacciones.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link id="iconoEncabezado" rel="icon" href="/recursos/vectores/Logo_NavBar_.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <nav class="navbar navbar-expand-lg  bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="display: flex ; justify-content:  center; align-items: center;" href="index.html">
+        Empresa
+        <svg  xmlns="http://www.w3.org/2000/svg"   height="24" viewBox="0 -960 960 960" width="24">
+            <path style="fill: white;"
+                d="M80-160v-120h80v-440q0-33 23.5-56.5T240-800h600v80H240v440h240v120H80Zm520 0q-17 0-28.5-11.5T560-200v-400q0-17 11.5-28.5T600-640h240q17 0 28.5 11.5T880-600v400q0 17-11.5 28.5T840-160H600Zm40-120h160v-280H640v280Zm0 0h160-160Z" />
+        </svg>
+    
+    </a>
+        
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+         
+          <li class="nav-item">
+            <a class="nav-link" href="">Demo-Inventario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reportes.html">Demo-Reportes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="configuracion.html">Configuracion</a>
+          </li>
+          
+        </ul>
+          <div class="form-group d-flex">
+            <select class="form-select" id="Temas_Selector">
+              <option disabled selected>Temas</option>
+              <option value="cerulean">Cerulean</option>
+              <option value="cosmo">Cosmo</option>
+              <option value="cyborg">Cyborg</option>
+              <option value="darkly">Darkly</option>
+              <option value="flatly">Flatly</option>
+              <option value="journal">Journal</option>
+              <option value="litera">Litera</option>
+              <option value="lumen">Lumen</option>
+              <option value="lux">Lux</option>
+              <option value="materia">Materia</option>
+              <option value="minty">Minty</option>
+              <option value="morph">Morph</option>
+              <option value="pulse">Pulse</option>
+              <option value="quartz">Quartz</option>
+              <option value="sandstone">Sandstone</option>
+              <option value="simplex">Simplex</option>
+              <option value="sketchy">Sketchy</option>
+              <option value="slate">Slate</option>
+              <option value="solar">Solar</option>
+              <option value="spacelab">Spacelab</option>
+              <option value="superhero">Superhero</option>
+              <option value="united">United</option>
+              <option value="yeti">Yeti</option>
+              <option value="vapor">Vapor</option>
+              <option value="zephyr">Zephyr</option>
+            </select>
+          </div>
+      </div>
+    </div>
+</nav>
+  <body>
+    <div class="Contenedor_Elementos_HorizontalYVertical">
+        <button type="button" class="btn btn_design btn-outline-primary" onclick="Mostrar_Modal('Agregar_SolicitudDeReserva')">Agregar Producto</button>
+        <button type="button" class="btn btn_design btn-outline-primary" onclick="Mostrar_Modal('Agregar_Soporte')">Editar Producto</button>
+        <button type="button" class="btn btn_design btn-outline-primary" onclick="Mostrar_Modal('Agregar_Materia')">Retirar Producto</button>
+    </div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="tab_General">
+          <a id="tab_General" class="nav-link active" data-bs-toggle="tab" href="#General" aria-selected="true" role="tab">General</a>
+        </li>
+        <li class="nav-item" role="tab_Activos">
+          <a id="tab_Activos" class="nav-link" data-bs-toggle="tab" href="#Productos_Activos" aria-selected="false" role="tab" tabindex="-1">Activos</a>
+      </li>
+        <li class="nav-item" role="tab_Prestados">
+            <a id="tab_Prestados" class="nav-link" data-bs-toggle="tab" href="#Productos_Prestados" aria-selected="false" role="tab" tabindex="-1">Prestados</a>
+        </li>
+        <li class="nav-item" role="tab_Mantenimiento">
+            <a id="tab_Mantenimiento" class="nav-link" data-bs-toggle="tab" href="#Productos_EnMantenimiento" aria-selected="false" role="tab" tabindex="-1">En Mantenimiento</a>
+        </li>
+        <li class="nav-item" role="tab_Retirado">
+          <a id="tab_Retirado" class="nav-link" data-bs-toggle="tab" href="#Productos_Retirados" aria-selected="false" role="tab" tabindex="-1">Retirados</a>
+        </li>
+        <li class="nav-item" role="tab_FueraDeServicio">
+         <a id="tab_FueraDeServicio" class="nav-link" data-bs-toggle="tab" href="#Productos_FueraDeServicio" aria-selected="false" role="tab" tabindex="-1">Fuera De Servicio</a>
+       </li>
+       <li class="nav-item" role="tab_Otros">
+        <a id="tab_Otros" class="nav-link" data-bs-toggle="tab" href="#Productos_Otros" aria-selected="false" role="tab" tabindex="-1">Otras Categorias</a>
+      </li>
+      
+      </ul>
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active show" id="General" role="tab_Contenido_General">
+            <table class="table table-hover" style="text-align: center;">
+                  <thead>
+                    <tr class="table-primary">
+                      <th class="OcultarElementoPorTamano" scope="col">Nro</th>
+                      <th scope="col">Estado</th>
+                      <th scope="col">Cantidad</th>
+                      <th  class="OcultarElementoPorTamano"  scope="col">Ver Mas</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr >
+                      <th class="OcultarElementoPorTamano" scope="row">1</th>
+                      <td>Activo</td>
+                      <td>00</td>
+                      <td  class="OcultarElementoPorTamano" ><a onclick="Click_En_Tab('Activos')"><span class="material-symbols-outlined">info</span></a></td>
+                    </tr>
+                    <tr>
+                      <th class="OcultarElementoPorTamano" scope="row">2</th>
+                      <td>Prestado</td>
+                      <td>00</td>
+                      <td  class="OcultarElementoPorTamano" ><a onclick="Click_En_Tab('Prestados')"><span class="material-symbols-outlined">info</span></a></td>
+                    </tr>
+                    <tr>
+                      <th class="OcultarElementoPorTamano"  scope="row">3</th>
+                      <td>En Mantenimiento</td>
+                      <td>00</td>
+                      <td  class="OcultarElementoPorTamano" ><a onclick="Click_En_Tab('Mantenimiento')"><span class="material-symbols-outlined">info</span></a></td>
+                    </tr>
+                    <tr>
+                      <th class="OcultarElementoPorTamano" scope="row">4</th>
+                      <td>Fuera de Servicio</td>
+                      <td>00</td>
+                      <td  class="OcultarElementoPorTamano" ><a onclick="Click_En_Tab('FueraDeServicio')"><span class="material-symbols-outlined">info</span></a></td>
+                    </tr>
+                    <tr>
+                      <th class="OcultarElementoPorTamano" scope="row">5</th>
+                      <td>Retirados</td>
+                      <td>00</td>
+                      <td  class="OcultarElementoPorTamano" ><a onclick="Click_En_Tab('Retirado')"><span class="material-symbols-outlined">info</span></a></td>
+                    </tr>
+                    <tr>
+                      <th class="OcultarElementoPorTamano" scope="row">6</th>
+                      <td>Otros</td>
+                      <td>00</td>
+                      <td  class="OcultarElementoPorTamano" ><a onclick="Click_En_Tab('Otros')"><span class="material-symbols-outlined">info</span></a></td>
+                    </tr>
+                  </tbody>
+            </table>
+        </div>
+        <div class="tab-pane fade" id="Productos_Activos" role="tab_Contenido_Activos">
+          <p>Activos</p>
+        </div>
+        <div class="tab-pane fade" id="Productos_Prestados" role="tab_Contenido_Prestados">
+          <p>Prestados</p>
+        </div>
+        <div class="tab-pane fade" id="Productos_EnMantenimiento" role="tab_Contenido_Mantenimiento">
+          <p>En Mantenimiento</p>
+        </div>
+        <div class="tab-pane fade" id="Productos_FueraDeServicio" role="tab_Contenido_FueraDeServicio">
+          <p>Fuera de Servicio</p>
+        </div>
+        <div class="tab-pane fade" id="Productos_Retirados" role="tab_Contenido_Retirados">
+          <p>Retirados</p>
+        </div>
+        <div class="tab-pane fade" id="Productos_Otros" role="tab_Contenido_Otros">
+          <p>Otros</p>
+        </div>
+      </div>
+    
+    
+  </body>
+    <script type="text/javascript" src="/javascript/funcionesInventario.js"></script>
+    <script type="text/javascript" src="/javascript/FuncionesGenerales.js"></script>
+    <script type="text/javascript" src="/javascript/graficos.js"></script>
+    <script type="text/javascript" src="/javascript/custom.js"></script>
+    <script type="text/javascript" src="/javascript/prism.js"></script>
+    <script type="text/javascript" src="/javascript/graficos_Inventario.js"></script>
+    <script type="text/javascript" src="/javascript/bootstrap.bundle.min.js"></script>
+</html>

@@ -12,11 +12,20 @@ html{
     padding: 5px 5px;
     text-align: center;
 }
-
+.texto_Al_Centro{
+    text-align: center;
+}
 .Contenedor_de_2_Elementos_en_Horizontal{
     display: block;
 }
+.Imagenes_Responsivas{
+    max-width: 100%; height: auto;
+}
 
+.texto_en_2_elementos{
+    width: 100%;
+    padding: 0px;
+}
 .Grafico{
     display: none;
  }
@@ -34,7 +43,7 @@ html{
         width: 100%;
         height: 100%;
     }
-   
+    
     .OcultarElementoPorTamano{
         display: none;
     }
@@ -47,7 +56,7 @@ html{
 /* Estilos para pantallas medianas (tablets y algunos teléfonos) */
 @media (min-width: 576px) {
     /* Tus estilos para pantallas medianas aquí */
-    
+   
     .Contenedor_de_2_Elementos_en_Horizontal {
         display: flex;
     }
@@ -55,7 +64,10 @@ html{
         width: 50%;
         height: auto;
     }
-    
+    .texto_en_2_elementos{
+        max-width: 50%; 
+        padding: 10px;
+    }
         
     
 }

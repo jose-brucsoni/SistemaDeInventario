@@ -4,22 +4,392 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
-    <link id="Link_Estilos_Generales" rel="stylesheet" href="./css/bootstrap-simplex.css"/>
-    <link rel="stylesheet" href="./css/EstilosContenedores.css" />
-    <link rel="stylesheet" href="./css/estilos-Adicionales.css" />
-    <link rel="stylesheet" href="./css/acciones-reacciones.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link
+      id="Link_Estilos_Generales"
+      rel="stylesheet"
+      href="/css/bootstrap-lux.css"
+    />
+    <link rel="stylesheet" href="/css/EstilosContenedores.css" />
+    <link rel="stylesheet" href="/css/estilos-Adicionales.css" />
+    <link rel="stylesheet" href="/css/acciones-reacciones.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      id="iconoEncabezado"
+      rel="icon"
+      href="/recursos/vectores/Logo_NavBar_.svg"
+      type="image/svg+xml"
+    />
   </head>
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a
+        class="navbar-brand"
+        style="display: flex; justify-content: center; align-items: center"
+        href="index.html"
+      >
+        Empresa
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24"
+          viewBox="0 -960 960 960"
+          width="24"
+        >
+          <path
+            style="fill: white"
+            d="M80-160v-120h80v-440q0-33 23.5-56.5T240-800h600v80H240v440h240v120H80Zm520 0q-17 0-28.5-11.5T560-200v-400q0-17 11.5-28.5T600-640h240q17 0 28.5 11.5T880-600v400q0 17-11.5 28.5T840-160H600Zm40-120h160v-280H640v280Zm0 0h160-160Z"
+          />
+        </svg>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarColor01"
+        aria-controls="navbarColor01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="inventario.html">Demo-Inventario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reportes.html">Demo-Reportes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="configuracion.html">Configuracion</a>
+          </li>
+        </ul>
+        <div class="form-group d-flex">
+          <select class="form-select" id="Temas_Selector">
+            <option disabled selected>Temas</option>
+            <option value="cerulean">Cerulean</option>
+            <option value="cosmo">Cosmo</option>
+            <option value="cyborg">Cyborg</option>
+            <option value="darkly">Darkly</option>
+            <option value="flatly">Flatly</option>
+            <option value="journal">Journal</option>
+            <option value="litera">Litera</option>
+            <option value="lumen">Lumen</option>
+            <option value="lux">Lux</option>
+            <option value="materia">Materia</option>
+            <option value="minty">Minty</option>
+            <option value="morph">Morph</option>
+            <option value="pulse">Pulse</option>
+            <option value="quartz">Quartz</option>
+            <option value="sandstone">Sandstone</option>
+            <option value="simplex">Simplex</option>
+            <option value="sketchy">Sketchy</option>
+            <option value="slate">Slate</option>
+            <option value="solar">Solar</option>
+            <option value="spacelab">Spacelab</option>
+            <option value="superhero">Superhero</option>
+            <option value="united">United</option>
+            <option value="yeti">Yeti</option>
+            <option value="vapor">Vapor</option>
+            <option value="zephyr">Zephyr</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </nav>
+
   <body>
+    <div>
+      <img
+        src="/recursos/imagenes/portadaDePagina.png"
+        alt="Imagen de Inicio"
+        class="Imagenes_Responsivas"
+      />
+      <div style="">
+        <h2 style="margin-top: 20px" class="texto_Al_Centro">
+          Caracteristicas:
+        </h2>
+        <!-- Caracteristicas-->
+        <div
+          class="Contenedor_Elementos_HorizontalYVertical"
+          style="justify-content: center"
+        >
+          <figure>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="50"
+              viewBox="0 -960 960 960"
+              width="50"
+            >
+              <path
+                d="M620-163 450-333l56-56 114 114 226-226 56 56-282 282Zm220-397h-80v-200h-80v120H280v-120h-80v560h240v80H200q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h167q11-35 43-57.5t70-22.5q40 0 71.5 22.5T594-840h166q33 0 56.5 23.5T840-760v200ZM480-760q17 0 28.5-11.5T520-800q0-17-11.5-28.5T480-840q-17 0-28.5 11.5T440-800q0 17 11.5 28.5T480-760Z"
+              />
+            </svg>
+            <h5>Gestion de Inventario</h5>
+            <blockquote class="blockquote">
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                posuere erat a ante.
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </figcaption>
+          </figure>
+          <figure>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="50"
+              viewBox="0 -960 960 960"
+              width="50"
+            >
+              <path
+                d="M160-120q-33 0-56.5-23.5T80-200v-640l67 67 66-67 67 67 67-67 66 67 67-67 67 67 66-67 67 67 67-67 66 67 67-67v640q0 33-23.5 56.5T800-120H160Zm0-80h280v-240H160v240Zm360 0h280v-80H520v80Zm0-160h280v-80H520v80ZM160-520h640v-120H160v120Z"
+              />
+            </svg>
+            <h5>Reportes</h5>
+            <blockquote class="blockquote">
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                posuere erat a ante.
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </figcaption>
+          </figure>
+          <figure>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="50"
+              viewBox="0 -960 960 960"
+              width="50"
+            >
+              <path
+                style="fill: black"
+                d="M80-160v-120h80v-440q0-33 23.5-56.5T240-800h600v80H240v440h240v120H80Zm520 0q-17 0-28.5-11.5T560-200v-400q0-17 11.5-28.5T600-640h240q17 0 28.5 11.5T880-600v400q0 17-11.5 28.5T840-160H600Zm40-120h160v-280H640v280Zm0 0h160-160Z"
+              />
+            </svg>
+            <h5>Adaptable</h5>
 
+            <blockquote class="blockquote">
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                posuere erat a ante.
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </figcaption>
+          </figure>
+          <figure>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="50"
+              viewBox="0 -960 960 960"
+              width="50"
+            >
+              <path
+                style="fill: black"
+                d="M480-80q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q97-30 162-118.5T718-480H480v-315l-240 90v207q0 7 2 18h238v316Z"
+              />
+            </svg>
+            <h5>Seguro</h5>
+            <blockquote class="blockquote">
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                posuere erat a ante.
+              </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Someone famous in <cite title="Source Title">Source Title</cite>
+            </figcaption>
+          </figure>
+        </div>
+        <div
+          class="Contenedor_de_2_Elementos_en_Horizontal"
+          style="margin: 20px 5px"
+        >
+          <div style="display: flex; justify-content: center; text-align: center;">
+            <div>
+              <h2>Ventajas</h2>
+              <div style="width: 100%;">
+                <ul st class="list-group">
+                  
+                  <li class="list-group-item list-group-item-success d-flex justify-content-between align-items-center">
+                    Seguimiento en tiempo real de tu inventario
+                  </li>
+                  <li class="list-group-item list-group-item-success d-flex justify-content-between align-items-center">
+                    Reportes semanales, mensuales y anuales
+                  </li>
+                  <li class="list-group-item list-group-item-success d-flex justify-content-between align-items-center">
+                    Ajustado a tu negocio o empresa
+                  </li>
+                  <li class="list-group-item list-group-item-success d-flex justify-content-between align-items-center">
+                    Reduccion de errores humanos
+                  </li>
+                  <li class="list-group-item list-group-item-success d-flex justify-content-between align-items-center">
+                    Mayor eficiencia del tiempo
+                  </li>
+                  <li class="list-group-item list-group-item-success d-flex justify-content-between align-items-center">
+                    Gestion de Proveedores
+                  </li>
+                  <li class="list-group-item list-group-item-success d-flex justify-content-between align-items-center">
+                    Mayor competitividad
+                  </li>
+                  <li class="list-group-item list-group-item-success d-flex justify-content-between align-items-center">
+                    Impulsa la expansión
+                  </li>
+                  <li class="list-group-item list-group-item-success d-flex justify-content-between align-items-center">
+                    Facilita la Auditoría
+                  </li>
+                  <li class="list-group-item list-group-item-success d-flex justify-content-between align-items-center">
+                    Facil de usar
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; justify-content: center; text-align: center;">
+            <div>
+              <h2>Desventajas</h2>
+              <div  style="width: 100%;">
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-danger d-flex justify-content-between align-items-center">
+                    Ninguno
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div style="padding: 10px 15px;">
+          <h2>Planes y Precios</h2>
+          <table class="table table-hover" style="margin:  5px 10px; text-align: center;">
+            <thead>
+              <tr class="table-primary">
+                <th scope="col">Plan</th>
+                <th scope="col">Monto Por Cuota Mensual</th>
+                <th scope="col">Tiempo de Entrega</th>
+                <th scope="col">Monto Inicial</th>
+              </tr>
+            </thead>
+            <tbody >
+              <tr>
+                <th scope="row">Estandar Contado</th>
+                <td>500$</td>
+                <td>3 - 5 Meses</td>
+                <td>99$</td>
+              </tr>
+              <tr>
+                <th scope="row">Estandar (3 Cuotas)</th>
+                <td>224$</td>
+                <td>3 - 5 Meses</td>
+                <td>99$</td>
+              </tr> 
+              <tr>
+                <th scope="row">Estandar (6 Cuotas)</th>
+                <td>138$</td>
+                <td>3 - 5 Meses</td>
+                <td>99$</td>
+              </tr>
+              <tr>
+                <th scope="row">Estandar (12 Cuotas)</th>
+                <td>84$</td>
+                <td>3 - 5 Meses</td>
+                <td>99$</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div style="padding: 10px 15px;">
+          <table class="table table-hover" style="margin:  5px 10px; text-align: center;">
+            <thead>
+              <tr class="table-primary">
+                <th scope="col">Plan</th>
+                <th scope="col">Monto Por Cuota Mensual</th>
+                <th scope="col">Tiempo de Entrega</th>
+                <th scope="col">Monto Inicial</th>
+              </tr>
+            </thead>
+            <tbody >
+              <tr>
+                <th scope="row">Express Contado</th>
+                <td>750$</td>
+                <td>1 - 3 Meses</td>
+                <td>99$</td>
+              </tr>
+              <tr>
+                <th scope="row">Express (3 Cuotas)</th>
+                <td>334$</td>
+                <td>1 - 3 Meses</td>
+                <td>99$</td>
+              </tr> 
+              <tr>
+                <th scope="row">Express (6 Cuotas)</th>
+                <td>208$</td>
+                <td>1 - 3 Meses</td>
+                <td>99$</td>
+              </tr>
+              <tr>
+                <th scope="row">Express (12 Cuotas)</th>
+                <td>125$</td>
+                <td>1 - 3 Meses</td>
+                <td>99$</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Sobre Nosotros -->
 
+        <footer id="footer" class="bg-primary" style="padding: 10px 30px">
+          <div style="margin: 25px 0px; padding: 0px 25px">
+            <h4 class="text-light">Sobre Nosotros:</h4>
+            <div
+              class="Contenedor_de_2_Elementos_en_Horizontal"
+              style="text-align: start"
+            >
+              <p class="texto_en_2_elementos text-light">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda eos, tempora mollitia quasi laudantium aperiam aliquam
+                repellendus minima repellat sunt incidunt. Doloribus, ad. Culpa
+                nulla exercitationem, sit magni dolorum eum?.\n Lorem, ipsum
+                dolor sit amet consectetur adipisicing elit. Assumenda eos,
+                tempora mollitia quasi laudantium aperiam aliquam repellendus
+                minima repellat sunt incidunt. Doloribus, ad. Culpa nulla
+                exercitationem, sit magni dolorum eum?
+              </p>
+              <div style="width: 100%; display: flex; justify-content: center">
+                <img
+                  style="max-height: 200px; border-radius: 20%"
+                  class="Imagenes_Responsivas"
+                  src="/recursos/imagenes/logo-blanco.png"
+                  alt="LogoDeLaEmpresa"
+                />
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
   </body>
-    <script type="text/javascript" src="./js/FuncionesGenerales.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript" src="./js/graficos.js"></script>
-    <script type="text/javascript" src="./js/custom.js"></script>
-    <script type="text/javascript" src="./js/prism.js"></script>
-    <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="./js/Uso_De_Laboratorio_Funciones.js"></script>
+  <script
+    type="text/javascript"
+    src="/javascript/FuncionesGenerales.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://www.gstatic.com/charts/loader.js"
+  ></script>
+  <script type="text/javascript" src="/javascript/graficos.js"></script>
+  <script type="text/javascript" src="/javascript/custom.js"></script>
+  <script type="text/javascript" src="/javascript/prism.js"></script>
+  <script
+    type="text/javascript"
+    src="/javascript/bootstrap.bundle.min.js"
+  ></script>
 </html>
