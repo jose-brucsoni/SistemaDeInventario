@@ -2,6 +2,9 @@ html{
     width: 100%;
     height: 100%;
 }
+table a{
+    cursor: pointer;
+}
 .Contenedor_Elementos_HorizontalYVertical{
     display: flex;
     flex-wrap: wrap;
